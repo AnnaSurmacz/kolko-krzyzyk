@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kolkokrzyzyk.MainController">
+   <children>
+      <Pane prefHeight="811.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="818.0" fitWidth="808.0" layoutY="-21.0">
+               <image>
+                  <Image url="@kolkoikrzyzyk.jpg" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="gameGrid" layoutX="220.0" layoutY="203.0" prefHeight="474.0" prefWidth="466.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.7999633789062" minWidth="0.0" prefWidth="192.79996337890626" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.60003662109372" minWidth="10.0" prefWidth="229.60003662109372" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="382.6000122070312" minHeight="10.0" prefHeight="227.39996948242185" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="256.00001220703126" minHeight="10.0" prefHeight="220.80003051757814" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.59999694824218" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <Button fx:id="saveButton" layoutX="45.0" layoutY="693.0" mnemonicParsing="false" onAction="#handleSaveGame" prefHeight="44.0" prefWidth="159.0" text="Zapisz Grę">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="newGameButton" layoutX="294.0" layoutY="693.0" mnemonicParsing="false" onAction="#handleNewGame" prefHeight="44.0" prefWidth="159.0" text="Nowa Gra">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="555.0" layoutY="693.0" mnemonicParsing="false" onAction="#handleExitGame" prefHeight="44.0" prefWidth="159.0" text="Zamknij Grę">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
